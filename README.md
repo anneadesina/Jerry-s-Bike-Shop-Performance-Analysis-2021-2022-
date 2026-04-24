@@ -5,52 +5,104 @@ Using SQL for data extraction and transformation and Power BI for interactive da
 
 At a glance, the business generated $15M in revenue, $10.45M in profit, served 3 million riders, and maintained a 45% profit margin.
 
-#Introduction
-The goal of this analysis was to understand what drives revenue and profitability in a bike rental business.
+## Introduction
+The objective of this analysis is to understand the key drivers of revenue and profitability in a bike rental business.
 
-The dashboard answers key questions about peak earning hours, seasonal performance, customer value, and demand trends.
+The dashboard answers important business questions:
+- When are the most profitable hours?
+- Which seasons perform best?
+- Who are the most valuable customers?
+- How does rider demand influence revenue?
 
-The dataset includes hourly sales records, monthly trends, seasonal performance, and rider segmentation, all processed using SQL and visualized in Power BI.
+The dataset includes hourly, monthly, and seasonal data, processed using SQL and visualized in Power BI.
 
-#The Story Behind the Data
-The dataset originates from operational systems, capturing rides, revenue, and profit across time.
+## The Story Behind the Data
+The dataset is derived from operational records capturing ride activity, revenue, and profit.
 
-Key features include hour, revenue, profit, rider count, season, and customer type.
+### Key Features
+- Hour: Time of transaction
+- Revenue: Total earnings
+- Profit: Net income after costs
+- Riders: Customer volume
+- Season: Categorized performance periods
+- Customer Type: Casual vs Registered users
 
-#Data Preparation
-Data was cleaned using SQL by removing duplicates, standardizing time formats, aggregating metrics, and segmenting riders.
+## Data Preparation and Processing
+Data cleaning and transformation were performed using SQL:
+- Removed duplicate records
+- Standardized time formats
+- Aggregated revenue and profit metrics
+- Created calculated fields for KPIs
+- Segmented customers into categories
 
-#Variables Used
-Dependent Variables: Revenue, Profit, Rider Count
-Independent Variables: Time, Season, Customer Type
+### Variables Used
+- Dependent Variables: Revenue, Profit, Rider Count
+- Independent Variables: Time, Season, Customer Type
 
-#Pre-Analysis
-Initial findings showed revenue peaks during morning and evening commute hours, strong midweek performance, and dominance of registered riders.
+## Pre-Analysis Insights
+Initial exploration revealed:
+- Peak revenue during morning and evening commute hours
+- Stronger performance midweek
+- Registered riders dominate usage
+- Seasonal variation impacts performance
 
-#In-Analysis
-Revenue and rider activity grew steadily into mid-2022 before declining slightly.
+## In-Analysis Findings
 
-Peak hours were mornings and evenings. Season 3 generated the highest revenue.
+### Growth Trends
+Revenue and rider activity increased steadily from 2021, peaking mid-2022 before declining slightly.
 
-Registered riders accounted for 81 percent of users.
+### Time-Based Performance
+Highest revenue occurs during:
+- Morning (6–9 AM)
+- Evening (4–7 PM)
 
-#Post-Analysis Insights
-Revenue aligns with commuter behavior. Seasonal peaks drive profitability. Loyal customers generate most revenue.
+### Seasonal Performance
+- Season 3: Highest revenue (~$4.9M)
+- Season 2: ~$4.2M
+- Season 4: ~$3.9M
+- Season 1: ~$2.2M
 
-#Visualization
-Power BI dashboard includes KPI cards, line charts, bar charts, donut charts, and interactive filters.
+### Customer Segmentation
+- Registered Riders: 81%
+- Casual Riders: 19%
 
-#Recommendations
-Optimize peak hours, strengthen loyalty programs, maximize seasonal demand, improve off-peak usage, and convert casual riders.
+## Data Visualization
+Power BI dashboards include:
+- KPI Cards for revenue, profit, riders, and margin
+- Line charts for trend analysis
+- Bar charts for seasonal comparison
+- Donut charts for customer segmentation
+- Interactive filters for dynamic exploration
 
-#Conclusion
-The business is driven by predictable commuter demand, strong customer loyalty, and seasonal patterns, with high profitability and growth potential.
+## Post-Analysis Insights
+Key findings include:
+- Revenue aligns with commuter patterns
+- Seasonal demand drives performance
+- Loyal customers generate most revenue
+- Growth peaks mid-year
 
-#Limitations
-No geographic data, pricing breakdown, or external factors included.
+## Recommendations
+- Optimize operations during peak hours
+- Strengthen customer loyalty programs
+- Maximize high-performing seasons
+- Improve off-peak demand through incentives
+- Convert casual riders into registered users
 
-#Future Research
-Explore retention, pricing strategies, location insights, and predictive modeling.
+## Conclusion
+Jerry’s Bike Shop demonstrates strong profitability driven by predictable demand patterns, customer loyalty, and seasonal performance.
 
-#Tools Used
-SQL and Power BI
+## Limitations
+- No geographic data included
+- No pricing breakdown available
+- External factors not analyzed
+
+## Future Research
+Future analysis could include:
+- Customer retention and churn analysis
+- Pricing optimization strategies
+- Location-based performance insights
+- Predictive modeling using SQL and Power BI
+
+## Tools Used
+- SQL for data cleaning and transformation
+- Power BI for data visualization and dashboarding
